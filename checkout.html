@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Check Out</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Remix Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />    
+  <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+ <!-- Header section -->
+
+    <section id="header_sec">
+        <div class="container-fluid" id="header-cont">
+             <div class="row " id="header-row">
+                 <div class="col-sm-8 col-md-8 col-lg-3">
+                      <small>+ 1235 2355 98</small>
+                 </div>
+                 <div class="col-sm-8 col-md-8 col-lg-3">
+                      <small>youremail@email.com</small>
+                 </div>
+                 <div class="col-sm-8 col-md-8 col-lg-3">
+                      <small>3-5 Business days delivery & Free Returns</small>
+                 </div>
+             </div>
+        </div>
+    </section>
+    <!-- header section ends -->
+
+    <!-- Navbar section start -->
+
+    <section id="navbar_sec">
+         <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="navbrand">VEGEFOODS</a>
+
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                       <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-2">
+                        <a class="nav-link active" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                SHOP
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+                                <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+                                <li><a class="dropdown-item" href="single.html">Single Product</a></li>
+                                <li><a class="dropdown-item" href="cart.html">Cart</a></li>
+                                <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-2">
+                           <a class="nav-link active" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                           <a class="nav-link active" href="Blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                           <a class="nav-link active" href="contact.html">CONTACT</a>
+                        </li>
+                        <!-- <li class="nav-item mx-2">
+                          <a class="nav-link active" href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i>[o]</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+         </nav>
+    </section>
+    <!-- navbar section ends: -->
+
+    <!-- Hero section starts -->
+
+    <section id="hero_sec">
+        <div class="container-fluid" id="aboutheroimg">
+            <div class="row d-flex text-center">
+                <div class="col-lg-2 col-md-4 col-sm-4" style="position: absolute; top: 50%; left: 50%; transform: translate(-50% , -50%); line-height: 45px; color: white;">
+                     <small>HOME Shop</small>
+                     <h2><b>Shop Now</b></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- hero section ends -->
+
+<!-- Billing and Shipping Information  -->
+ <section>
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-7">
+                <h5>Billing Details</h5>
+                <form action="">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="first-name" class="form-label">First Name</label>
+                      <input type="text" class="form-control" id="first-name" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="last-name" class="form-label">Last Name</label>
+                      <input type="text" class="form-control" id="last-name" required>
+                    </div>
+                    <div class="col-12">
+                      <label for="country" class="form-label">State / Country</label>
+                      <select class="form-select border-success-subtle" id="country" required style="height:56px; font-size:1.1rem;">
+                        <option value="">Select Country</option>
+                        <option value="france" selected>France</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="germany">Germany</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="street-address" class="form-label">Street Address</label>
+                      <input type="text" class="form-control" id="street-address" placeholder="House number and street name" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="street-address-2" class="form-label">&nbsp;</label>
+                      <input type="text" class="form-control" id="street-address-2" placeholder="Apartment, suite, unit etc. (optional)">
+                    </div>
+                    <!-- twon city and postal code editing is  -->
+                     <div class="col-md-6">
+                     <label for="first-name" class="form-label">Twon/City</label>
+                      <input type="text" class="form-control" id="first-name" required>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="last-name" class="form-label">Postcode / ZIP*</label>
+                      <input type="text" class="form-control" id="last-name" required>
+                    </div>
+                    <!-- email and phone number editing is   -->
+                     <div class="col-md-6">
+                      <label for="email" class="form-label">Email Address*</label>
+                      <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="phone" class="form-label">Phone Number*</label>
+                      <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="creditCard" checked>
+                        <label class="form-check-label" for="creditCard">
+                            Create an account?
+                        </label>
+                        
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="creditCard" checked>
+                        <label class="form-check-label" for="creditCard">
+                            Ship to a different address?
+                        </label>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="mt-2 ms-3">
+                        <h5>Cart Total</h5>
+                    </div>
+                    <div class="card-body ">
+                        <p>Subtotal: <span class="ms-5">$20.60</span></p>
+                        <p>Delivery: <span class="ms-5">$10.00</span></p>
+                        <p>Discount: <span class="ms-5 ">$10.00</span></p>
+                        <hr>
+                        <p class="ms-2">Total: <span class="ms-5">$50.60</span></p>
+                    </div>
+                </div>
+                <!-- payment method is started from here  -->
+                <div class="mt-3">
+                    <h5>Payment Method</h5>
+                    <div class="form-check mt-2">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="directBankTransfer" value="directBankTransfer" checked>
+                        <label class="form-check-label" for="directBankTransfer">
+                            Direct Bank Transfer
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="checkPayment" value="checkPayment" checked>
+                        <label class="form-check-label" for="checkPayment">
+                            Check Payment
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="creditCard" checked>
+                        <label class="form-check-label" for="creditCard">
+                            Credit Card
+                        </label>
+                    </div>
+                    <div class="check-para">
+                        <label class="form-check-label" for="termsConditions">
+                            <input class="form-check-input" type="checkbox" id="termsConditions" required>
+                            I have read and accept the terms and conditions
+                        </label>
+                    </div>
+                    <!-- btn is is startec from here  -->
+                    <button type="submit" class="btn  w-100 mt-3 bbtn">Place Order</button>
+                </div>
+
+            </div>
+
+    
+ </section>
+
+<!-- Form is started from here  -->
+   <section>
+  <div class="container-fluid fullcont mt-5 mb-5">
+    <div class="row text-center text-md-start align-items-center">
+      <!-- Text Column -->
+      <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <h3>Subscribe to our Newsletter</h3>
+        <span>Get e-mail updates about our latest shops and special offers</span>
+      </div>
+
+      <!-- Form Column -->
+      <div class="col-12 col-md-6">
+        <form class="row gx-2">
+          <div class="col-12 col-sm-8">
+            <div class="input-group mb-3">
+             <input type="text" class="form-control" placeholder="Enter Email Address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+             <span class="input-group-text mybtn" id="basic-addon2">Subscribe</span>
+             </div>
+            <!-- <input class="form-control mysearch" type="email" placeholder="Enter Email Address" required>
+             <button class="mybtn " type="submit">Subscribe</button> -->
+          </div>
+          <div class="col-12 col-sm-4">
+            <!-- <button class="mybtn " type="submit">Subscribe</button> -->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- last page of the website is  -->
+   <!-- last page of the wishlist -->
+         <article>
+   <div id="pagelast  ">
+
+  <div class="container  mt-5 last-page ">
+    <div class="row mt-5 ">
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <h2 class="mb-3 ppph1" >Vegefood</h2>
+        <p class="margin-bottom ppph1">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+
+        <ul class="list-unstyled  mt-5 icons-box " id="icons-box">
+          <li>
+            <a href="#" >
+              <span class="icon "><i class="ri-twitter-fill "></i> </span>
+            </a>
+          </li>
+          <li>
+            <a href="#"> 
+              <span class="icon"><i class="ri-facebook-fill"></i></span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="#"> 
+              <span class="icon"><i class="ri-instagram-fill"></i></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <h2 class="ppph1">Menu</h2>
+        <ul class="list-unstyled ppph1">
+          <li>
+            <a  href="#" class="py-2 d-block" >Shop</a>
+          </li>
+          <li>
+            <a href="#" class="py-2 d-block">About</a>
+          </li>
+          <li>
+            <a href="#" class="py-2 d-block">Journal</a>
+          </li>
+          <li>
+            <a href="#" class="py-2 d-block">contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <h2 class="ppph1">Help</h2>
+        <ul class="list-unstyled ppph1">
+          <li>
+            <a href="#" class="py-2 d-block">Shipping Information</a>
+          </li>
+          <li>
+            <a href="#" class="py-2 d-block">Return & Exchange</a>
+          </li>
+          <li>
+            <a href="#" class="py-2 d-block">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="#" class="py-2 d-block">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <h2 class="ppph1">Have a Question</h2>
+        <ul class="list-unstyled ppph1">
+          <li>
+            <span><i class="ri-map-pin-fill"></i></span>
+            <span class="mt-4" >203 Fake St. Mountain View, San Francisco, California, USA</span>
+
+          </li>
+          <li class="mt-2">
+            <span><i class="ri-phone-fill"></i></span>
+            <span>+2 398765 210</span>
+          </li>
+          <li class="mt-2">
+            <span><i class="ri-mail-fill "></i></span>
+            <a href="#">info@yourdomain.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-12 mt-5 mb-5 text-center">
+      <p>
+        Copyright @
+        2025 All rights reserved | This template is made with 
+        <i class="ri-heart-3-fill"></i>
+        by
+        <a href="#" target="_blank">Colorlib</a>
+      </p>
+    </div>
+  </div>
+</div>
+</article>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body , html{
+    overflow-x: hidden;
+    max-width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Reset all container spacing */
+.container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+
+/* header_sec start */
+
+#header_sec{
+    min-height: 28px;
+    background-color: #82ae46 !important;
+    color: white;
+}
+#header-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding: 2px 0px;
+}
+
+/* header_section ends  */
+
+/* navbar section starts */
+
+#navbar_sec{
+    max-height: 68px;
+    background-color: white;
+}
+
+#navbrand{
+    margin-left: 180px;
+    color: #82ae46;
+    font-weight: bolder;
+}
+#navbarNavDropdown{
+    margin-left: 180px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+/* Fix mobile navbar dropdown background and visibility */
+.navbar-collapse {
+    z-index: 999;
+    position: relative;
+    padding: 1rem 0;
+}
+
+/* Mobile Navbar - Black Background Solution */
+@media (max-width: 991.98px) {
+    /* Change navbar background to black when collapsed */
+    #navbar_sec.navbar {
+        background-color: #000;
+        transition: background-color 0.3s ease;
+    }
+    
+    
+    /* Style the toggler button */
+    .navbar-toggler {
+        margin-right: 15px;
+    }
+    
+    /* Brand styling in mobile */
+    #navbrand {
+        margin-left: 15px;
+        color:  #82ae46 !important;
+        padding: 10px 0;
+    }
+    
+    /* Full width collapsed menu with black background */
+    .navbar-collapse {
+        background-color: #000;
+        padding: 15px;
+        width: calc(100% + 100px);
+    }
+    
+    /* Menu items styling */
+    #navbarNavDropdown .nav-link {
+        color: white !important;
+        padding: 10px 15px;
+    }
+        
+    /* Dropdown items */
+    #navbarNavDropdown .dropdown-item {
+        color:#000
+    }
+    
+    /* Remove left margin on mobile */
+    #navbarNavDropdown {
+        margin-left: 0 !important;
+    }
+}
+
+/* navbar section ends */
+
+/* hero section start */
+
+#hero_sec{
+    min-height: 400px;
+    background-image: url("./images/bg_1.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; /* needed because child is absolute */
+}
+
+
+
+
+
+    /* table editing is started from here  */
+    .table-img img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+
+
+
+/* table editing is ended from here  */
+.table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    @media (max-width: 992px) {
+        .table-img img {
+            width: 80px;
+            height: 80px;
+        }
+        .table-text p {
+            width: 200px !important;
+            margin-left: 40px !important;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .table-img img {
+            width: 60px;
+            height: 60px;
+        }
+        .table-text p {
+            width: 150px !important;
+            margin-left: 20px !important;
+            font-size: 0.8rem;
+        }
+        .table-text h6, .table-price h6 {
+            font-size: 0.9rem;
+        }
+        input[type="text"] {
+            width: 40px;
+            padding: 0.25rem !important;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .table-img img {
+            width: 40px;
+            height: 40px;
+        }
+        .table-text p {
+            width: 100px !important;
+            margin-left: 10px !important;
+            font-size: 0.7rem;
+        }
+        .table-text h6, .table-price h6 {
+            font-size: 0.8rem;
+        }
+        input[type="text"] {
+            width: 30px;
+        }
+    }
+
+
+
+    /* second section editing is stated form here / */
+.mysearch {
+  border-radius: 0%;
+  width: 100%;
+  height: 50px;
+}
+
+.mybtn {
+  padding: 0 30px;
+  background-color: #83ae46;
+  height: 50px;
+  /* margin-top: 10px; */
+  border: none;
+  width: 100%;
+}
+
+.fullcont {
+  background-color: #f7f6f2;
+  padding: 50px 60px;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* last page of the website is  */
+.container ul li a{
+  text-decoration: none;
+  color: #000;
+
+}
+.icons-box{
+  display: flex;
+  gap: 13%;
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  /* background-color: red; */
+}
+ul li .icon{
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 50%;
+  padding: 5px;
+}
+.last-page{
+  color: #000;
+}
+/* responsive is start form here  */
+
+@media screen and (max-width: 450px) {
+    .ppph1 {
+        text-align: center;
+    }
+    #icons-box{
+        margin-left: 30%;
+    }
+}
